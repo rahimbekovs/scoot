@@ -1,0 +1,16 @@
+@mixin divs {
+    display: flex;
+    // align-items: center;
+}
+
+@mixin phone {
+    @media (max-width: 425px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: 768px) {
+        @content;
+    }
+}

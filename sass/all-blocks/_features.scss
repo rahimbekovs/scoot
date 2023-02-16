@@ -1,0 +1,211 @@
+.features {
+    @include divs;
+    position: relative;
+    column-gap: 220px;
+    overflow-x: hidden;
+    @include tablet {
+        flex-direction: column-reverse;
+        row-gap: 56px;
+        text-align: center;
+    }
+    &__title1 {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 48px;
+        color: $tcolor2;
+    }
+    &__text1 {
+        font-weight: 400;
+        font-size: 15px;
+        margin: 24px 0 40px 0;
+        line-height: 25px;
+        color: $tcolor1;
+        max-width: 445px;
+        @include tablet {
+            // height: 75px;
+            // width: 573px;
+            max-width: none;
+        }
+    }
+    &__img1 {
+        max-width: 445px;
+        object-fit: cover;
+        @include tablet {
+            width: 445px;
+            height: 445px;
+        }
+        @include phone {
+            width: 311px;
+            height: 311px;
+        }
+    }
+    &__line-img {
+        position: absolute;
+        left: 550px;
+        @include tablet {
+            overflow-x: hidden;
+            left: 15px;
+            // width: 100%;
+            // height: 100%;
+            // display: none;
+        }
+        @include phone {
+            display: none;
+        }
+    }
+    &__mb-line1 {
+        display: none;
+        @include tablet {
+            display: none;
+        }
+        @include phone {
+            display: block;
+            position: absolute;
+            top: 160px;
+        }
+    }
+}
+
+.features2 {
+    margin-top: 160px;
+    @include divs;
+    column-gap: 165px;
+    position: relative;
+    overflow-x: hidden;
+    @include tablet {
+        flex-direction: column;
+        text-align: center;
+    }
+    &__img1 {
+        max-width: 445px;
+        height: 445px;
+        object-fit: cover;
+        @include tablet {
+            width: 445px;
+            height: 445px;
+        }
+        @include phone {
+            width: 311px;
+            height: 311px;
+        }
+    }
+    &__right {
+        max-width: 445px;
+        @include tablet {
+            text-align: center;
+            max-width: 573px;
+        }
+        @include phone {
+            text-align: center;
+            max-width: 573px;
+        }
+    }
+    &__title {
+        width: 100%;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 48px;
+        color: $tcolor2;
+        margin-bottom: 24px;
+        @include tablet {
+            margin-top: 40px;
+            margin: 40px 0 40px 0;
+            // width: 457px;
+        }
+    }
+    &__text {
+        font-family: 'Lexend Deca';
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        margin-bottom: 40px;
+        color: $tcolor1;
+        @include tablet {
+            width: 100%;
+        }
+        @include phone {
+            width: 100%;
+        }
+    }
+    &__line1 {
+        position: absolute;
+        left: -490px;
+        @include tablet {
+            left: -400px;
+        }
+        @include phone {
+            max-width: 445px;
+            left: -285px;
+        }
+    }
+}
+
+.features3 {
+    @include divs;
+    column-gap: 160px;
+    position: relative;
+    margin-top: 140px;
+    padding-bottom: 329px;
+    overflow-x: hidden;
+    @include phone {
+        padding-bottom: 120px;
+    }
+    @include tablet {
+        flex-direction: column-reverse;
+        text-align: center;
+        overflow-x: hidden;
+    }
+    &__img {
+        max-width: 445px;
+        height: 445px;
+        object-fit: cover;
+        @include phone {
+            width: 311px;
+            height: 311px;
+            margin-bottom: 56px;
+        }
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 48px;
+        margin-bottom: 24px;
+        color: $tcolor2;
+        @include phone {
+            margin-bottom: 32px;
+        }
+    }
+    &__text {
+        font-family: 'Lexend Deca';
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        color: $tcolor1;
+        margin-bottom: 40px;
+    }
+    &__line {
+        max-width: 700px;
+        position: absolute;
+        right: -510px;
+        @include tablet {
+            overflow-x: hidden;
+            right: -370px;
+            width: 700px;
+        }
+        @include phone {
+            display: none;
+        }
+    }
+    &__mobi-line {
+        display: none;
+        @include tablet {
+            display: none;
+        }
+        @include phone {
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
+}

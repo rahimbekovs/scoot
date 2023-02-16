@@ -1,0 +1,143 @@
+header {
+    background-image: url(../../images/abt.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position-y: 50px;
+    @include tablet {
+        background-image: url(../imagess/tablet-header.png);
+        background-image: url(../../images/abt.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+.menu__label {
+    display: none;
+}
+
+@include phone {
+    .menu__label {
+        display: block;
+    }
+}
+
+nav {
+    background-color: #ffff;
+    position: fixed;
+    z-index: 40;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 96px;
+}
+
+.menu {
+    @include divs;
+    column-gap: 58px;
+    position: fixed;
+    padding: 21px 0;
+    align-items: center;
+    width: 80%;
+    @include phone {
+        justify-content: space-around;
+    }
+    &__bar {
+        width: 100%;
+        @include divs;
+        align-items: center;
+        justify-content: space-between;
+        @include phone {
+            padding: 64px 32px 24px 32px;
+            margin-top: 46px;
+            width: 280px;
+            flex-direction: column;
+            background: #333A44;
+            height: 91vh;
+            top: 50px;
+            position: absolute;
+            z-index: 20;
+            transition: 1s;
+            transform: translateX(-500px);
+        }
+    }
+    &__ul {
+        @include divs;
+        column-gap: 32px;
+        @include phone {
+            flex-direction: column;
+            row-gap: 24px;
+        }
+        &-a {
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 25px;
+            color: $tcolor1;
+        }
+    }
+    &__logo {
+        max-width: 107px;
+        height: 28px;
+        object-fit: cover;
+    }
+    &__label2 {
+        display: none;
+        @include phone {
+            display: none;
+        }
+    }
+    &__img1 {
+        max-width: 18px;
+        height: 18px;
+        object-fit: cover;
+    }
+    &__img2 {
+        display: none;
+        @include phone {
+            display: block;
+            max-width: 18px;
+            height: 18px;
+            object-fit: cover;
+        }
+    }
+}
+
+.menu__inp:checked~.menu__bar {
+    z-index: 30;
+    transform: translateX(-50px);
+}
+
+.menu__label2 {
+    display: none;
+}
+
+.menu__inp:checked~.menu__label {
+    display: none;
+}
+
+.menu__inp:checked~.menu__label2 {
+    display: block;
+}
+
+.menu__inp:checked~.menu__label {
+    display: none;
+}
+
+.abt {
+    &__title {
+        padding-top: 168px;
+        padding-bottom: 72px;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 56px;
+        color: #FFFFFF;
+        @include phone {
+            text-align: center;
+        }
+    }
+}

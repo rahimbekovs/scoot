@@ -1,0 +1,65 @@
+.signs {
+    background-image: url(../../images/sign.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @include tablet {
+        background-image: url(../../images/sign-tablet.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    @include phone {
+        background-image: url(../../images/sign-mobi.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.sign {
+    padding: 102px 0;
+    @include divs;
+    column-gap: 336px;
+    @include tablet {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        row-gap: 40px;
+    }
+    @include phone {
+        text-align: center;
+        padding: 86px 32px 88px 32px;
+    }
+    &__title {
+        font-weight: 700;
+        width: 445px;
+        font-size: 48px;
+        line-height: 48px;
+        color: #FFFFFF;
+        @include phone {
+            width: 311px;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 32px;
+        }
+    }
+    &__right {
+        @include divs;
+        align-items: center;
+        column-gap: 18px;
+        @include phone {
+            column-gap: 12px;
+        }
+    }
+    &__img {
+        max-width: 159px;
+        height: 56px;
+        object-fit: cover;
+    }
+    &__img2 {
+        max-width: 159px;
+        height: 56px;
+        object-fit: cover;
+    }
+}

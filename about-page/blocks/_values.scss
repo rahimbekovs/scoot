@@ -1,0 +1,52 @@
+.values {
+    margin-top: 80px;
+}
+
+.value {
+    &__title {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 48px;
+        text-align: center;
+        color: $tcolor2;
+    }
+    &__cards {
+        @include divs;
+        column-gap: 30px;
+        @include tablet {
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+        }
+    }
+    &__card {
+        position: relative;
+        max-width: 350px;
+        margin-top: 85px;
+        text-align: center;
+    }
+    // &__img {}
+    &__it {
+        position: absolute;
+        left: 120px;
+        top: 200px;
+    }
+    &__card-title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        width: 100%;
+        color: $tcolor2;
+        margin-top: 87px;
+    }
+    &__card-text {
+        font-family: 'Lexend Deca';
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        margin-top: 27px;
+        text-align: center;
+        color: $tcolor1;
+    }
+}

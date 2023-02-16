@@ -1,0 +1,40 @@
+@import './blocks/mixins';
+@import './blocks/variabless';
+@import './fontss/fontss.css';
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1136px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+body {
+    font-family: 'Space Mono';
+    overflow-x: hidden;
+}
+
+.btn {
+    padding: 14px 39px;
+    background: #FCB72B;
+    border: 3px solid #FCB72B;
+    font-family: 'Space Mono';
+    font-weight: 700;
+    font-size: 15px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+@import './blocks/blockss';
+.btn:hover {
+    transition: 1s;
+    background: transparent;
+    border: 3px solid #FCB72B;
+    color: #FCB72B;
+}
