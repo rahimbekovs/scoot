@@ -79,6 +79,10 @@ nav {
             line-height: 25px;
             color: $tcolor1;
         }
+        &-a:hover {
+            transform: scale(1.2, 1.2);
+            color: #FCB72B;
+        }
     }
     &__logo {
         max-width: 107px;

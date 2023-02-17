@@ -42,6 +42,10 @@ footer {
         line-height: 25px;
         color: $tcolor1;
     }
+    &__a:hover {
+        transform: scale(1.2, 1.2);
+        color: #FCB72B;
+    }
     &__item-social {
         @include divs;
         column-gap: 24px;
@@ -50,8 +54,16 @@ footer {
         }
     }
     &__item-socialm {
+        transition: 1s;
+        cursor: pointer;
         @include phone {
             width: 18px;
         }
+    }
+}
+
+.footer {
+    &__item-socialm:hover {
+        transform: scale(1.2, 1.2);
     }
 }

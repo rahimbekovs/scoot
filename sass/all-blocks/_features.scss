@@ -29,6 +29,7 @@
     }
     &__img1 {
         max-width: 445px;
+        transition: 1s;
         object-fit: cover;
         @include tablet {
             width: 445px;
@@ -38,6 +39,9 @@
             width: 311px;
             height: 311px;
         }
+    }
+    &__img1:hover {
+        transform: scale(0.9, 0.9);
     }
     &__line-img {
         position: absolute;
@@ -80,6 +84,7 @@
         max-width: 445px;
         height: 445px;
         object-fit: cover;
+        transition: 1s;
         @include tablet {
             width: 445px;
             height: 445px;
@@ -88,6 +93,9 @@
             width: 311px;
             height: 311px;
         }
+    }
+    &__img1:hover {
+        transform: scale(1.2, 1.2);
     }
     &__right {
         max-width: 445px;
@@ -159,11 +167,15 @@
         max-width: 445px;
         height: 445px;
         object-fit: cover;
+        transition: 1s;
         @include phone {
             width: 311px;
             height: 311px;
             margin-bottom: 56px;
         }
+    }
+    &__img:hover {
+        transform: scale(0.9, 0.9);
     }
     &__title {
         font-weight: 700;

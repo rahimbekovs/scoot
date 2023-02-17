@@ -33,6 +33,7 @@
     }
     &__right {
         max-width: 730px;
+        transition: 0.5s;
         @include phone {
             max-width: 311px;
         }
@@ -60,6 +61,10 @@
     &__right-item {
         padding: 32px 40px;
         background: #F2F5F9;
+        transition: 1s;
+    }
+    &__right-item:hover {
+        transform: scale(0.9, 0.9);
     }
     &__right-text1 {
         margin-top: 24px;
@@ -69,17 +74,25 @@
         width: 100%;
         padding: 32px 334px 32px 40px;
         background: #F2F5F9;
+        transition: 1s;
         @include phone {
             padding: 32px 60px 32px 32px;
         }
+    }
+    &__right-item2:hover {
+        transform: scale(0.9, 0.9);
     }
     &__right-item3 {
         padding: 32px 307px 32px 40px;
         width: 100%;
         background: #F2F5F9;
         margin-top: 16px;
+        transition: 1s;
         @include phone {
             padding: 32px 60px 32px 32px;
         }
+    }
+    &__right-item3:hover {
+        transform: scale(0.9, 0.9);
     }
 }

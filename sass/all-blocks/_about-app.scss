@@ -19,10 +19,14 @@
     &__img {
         max-width: 96px;
         object-fit: cover;
+        transition: 1s;
         @include tablet {
             width: 96px;
             height: 96px;
         }
+    }
+    &__img:hover {
+        transform: scale(1.2, 1.2);
     }
     &__card {
         z-index: 10;

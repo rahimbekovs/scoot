@@ -30,6 +30,10 @@
         position: absolute;
         left: 120px;
         top: 200px;
+        transition: .5s;
+    }
+    &__it:hover {
+        transform: scale(0.9, 0.9);
     }
     &__card-title {
         font-weight: 700;
@@ -48,5 +52,11 @@
         margin-top: 27px;
         text-align: center;
         color: $tcolor1;
+    }
+    &__img {
+        transition: 1s;
+    }
+    &__img:hover {
+        transform: scale(1.2, 1.2);
     }
 }

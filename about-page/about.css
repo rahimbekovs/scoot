@@ -121,6 +121,10 @@ nav {
   line-height: 25px;
   color: #939CAA;
 }
+.menu__ul-a:hover {
+  transform: scale(1.2, 1.2);
+  color: #FCB72B;
+}
 .menu__logo {
   max-width: 107px;
   height: 28px;
@@ -265,12 +269,16 @@ nav {
   height: 445px;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: 1s;
 }
 @media (max-width: 425px) {
   .era__img {
     width: 311px;
     height: 311px;
   }
+}
+.era__img:hover {
+  transform: scale(1.2, 1.2);
 }
 .era__left {
   width: 573px;
@@ -372,11 +380,17 @@ nav {
     display: none;
   }
 }
+.era2__img {
+  transition: 1s;
+}
 @media (max-width: 425px) {
   .era2__img {
     width: 311px;
     height: 311px;
   }
+}
+.era2__img:hover {
+  transform: scale(1.2, 1.2);
 }
 .era2__phline {
   display: none;
@@ -427,6 +441,10 @@ nav {
   position: absolute;
   left: 120px;
   top: 200px;
+  transition: 0.5s;
+}
+.value__it:hover {
+  transform: scale(0.9, 0.9);
 }
 .value__card-title {
   font-weight: 700;
@@ -445,6 +463,12 @@ nav {
   margin-top: 27px;
   text-align: center;
   color: #939CAA;
+}
+.value__img {
+  transition: 1s;
+}
+.value__img:hover {
+  transform: scale(1.2, 1.2);
 }
 
 .faqs {
@@ -484,6 +508,7 @@ nav {
 }
 .faq__right {
   max-width: 730px;
+  transition: 0.5s;
 }
 @media (max-width: 425px) {
   .faq__right {
@@ -513,6 +538,10 @@ nav {
 .faq__right-item {
   padding: 32px 40px;
   background: #F2F5F9;
+  transition: 1s;
+}
+.faq__right-item:hover {
+  transform: scale(0.9, 0.9);
 }
 .faq__right-text1 {
   margin-top: 24px;
@@ -522,22 +551,30 @@ nav {
   width: 100%;
   padding: 32px 334px 32px 40px;
   background: #F2F5F9;
+  transition: 1s;
 }
 @media (max-width: 425px) {
   .faq__right-item2 {
     padding: 32px 60px 32px 32px;
   }
 }
+.faq__right-item2:hover {
+  transform: scale(0.9, 0.9);
+}
 .faq__right-item3 {
   padding: 32px 307px 32px 40px;
   width: 100%;
   background: #F2F5F9;
   margin-top: 16px;
+  transition: 1s;
 }
 @media (max-width: 425px) {
   .faq__right-item3 {
     padding: 32px 60px 32px 32px;
   }
+}
+.faq__right-item3:hover {
+  transform: scale(0.9, 0.9);
 }
 
 .signs {
@@ -678,6 +715,10 @@ footer {
   line-height: 25px;
   color: #939CAA;
 }
+.footer__a:hover {
+  transform: scale(1.2, 1.2);
+  color: #FCB72B;
+}
 .footer__item-social {
   display: flex;
   -moz-column-gap: 24px;
@@ -688,10 +729,18 @@ footer {
     text-align: center;
   }
 }
+.footer__item-socialm {
+  transition: 1s;
+  cursor: pointer;
+}
 @media (max-width: 425px) {
   .footer__item-socialm {
     width: 18px;
   }
+}
+
+.footer__item-socialm:hover {
+  transform: scale(1.2, 1.2);
 }
 
 .btn:hover {
